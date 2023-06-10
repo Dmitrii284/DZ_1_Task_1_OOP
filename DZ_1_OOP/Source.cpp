@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <iomanip> 
 #include<cstdio>
 
@@ -17,42 +17,42 @@ public:
 	}
 	void Print()
 	{
-		std::cout << "Èñõîäíûå äàííûå: " << _x << " è "<< _y << '\n';		
+		std::cout << "Ð˜ÑÑ…Ð¾Ð´Ð½Ñ‹Ðµ Ð´Ð°Ð½Ð½Ñ‹Ðµ: " << _x << " Ð¸ "<< _y << '\n';		
 	}
 
 	void PrintSum()
 	{
-		std::cout << "Ñóììà ÷èñåë: " << _x << " è " << _y << std::endl;
+		std::cout << "Ð¡ÑƒÐ¼Ð¼Ð° Ñ‡Ð¸ÑÐµÐ»: " << _x << " Ð¸ " << _y << std::endl;
 		std::cout << _x << " + " << _y << " = " << _x + _y << std::endl;
 	}
 	void PrintMulti()
 	{
-		std::cout << "Óìíîæåíèå ÷èñåë: " << _x << " è " << _y << std::endl;
+		std::cout << "Ð£Ð¼Ð½Ð¾Ð¶ÐµÐ½Ð¸Ðµ Ñ‡Ð¸ÑÐµÐ»: " << _x << " Ð¸ " << _y << std::endl;
 		std::cout << _x << " * " << _y << " = " << _x * _y << std::endl;
 	}
 	void PrintSubtr()
 	{		
-			std::cout << "Âû÷èòàíèå ÷èñåë: " << _x << " è " << _y << std::endl;
+			std::cout << "Ð’Ñ‹Ñ‡Ð¸Ñ‚Ð°Ð½Ð¸Ðµ Ñ‡Ð¸ÑÐµÐ»: " << _x << " Ð¸ " << _y << std::endl;
 			std::cout << _x << " - " << _y << " = " << _x - _y << std::endl;		
 	}
 	void PrintFrac()
 	{
 		if (_y == 0)
 		{
-			std::cout << "Äåëìòü íà "  << _y <<" íåëüçÿ \n" << std::endl;			
+			std::cout << "Ð”ÐµÐ»Ð¼Ñ‚ÑŒ Ð½Ð° "  << _y <<" Ð½ÐµÐ»ÑŒÐ·Ñ \n" << std::endl;			
 		}
 		else
 		{
-			std::cout << "Äåëåíèå ÷èñåë: " << _x << " è " << _y << std::endl;
+			std::cout << "Ð”ÐµÐ»ÐµÐ½Ð¸Ðµ Ñ‡Ð¸ÑÐµÐ»: " << _x << " Ð¸ " << _y << std::endl;
 			std::cout << _x << " : " << _y << " = " << std::setprecision(2) << _x / _y << std::endl;
 		}		
 	}
 	void Operation(int numOper)
 	{	
-		std::cout << "1 - ýòî Óìíîæåíèå \n";		
-		std::cout << "2 - ýòî Äåëåíèå \n";
-		std::cout << "3 - ýòî Ñëîæåíèå \n";
-		std::cout << "4 - ýòî Âû÷èòàíèå \n";
+		std::cout << "1 - ÑÑ‚Ð¾ Ð£Ð¼Ð½Ð¾Ð¶ÐµÐ½Ð¸Ðµ \n";		
+		std::cout << "2 - ÑÑ‚Ð¾ Ð”ÐµÐ»ÐµÐ½Ð¸Ðµ \n";
+		std::cout << "3 - ÑÑ‚Ð¾ Ð¡Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ \n";
+		std::cout << "4 - ÑÑ‚Ð¾ Ð’Ñ‹Ñ‡Ð¸Ñ‚Ð°Ð½Ð¸Ðµ \n";
 	}
 };
 
@@ -61,25 +61,25 @@ int main()
 	setlocale(LC_ALL, "Rus");	
 	char n1 = 'y';
 	int num1 = 0, num2 = 0, numOper;
-	std::cout << "Ââåäèòå äâà ÷èñëà -> \n";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð²Ð° Ñ‡Ð¸ÑÐ»Ð° -> \n";
 	std::cin >> num1 >> num2;
 	Fraction* num = new Fraction(num1, num2);
 	std::cout << "\n";	
 	do
 	{
-		std::cout << "1 - ýòî Óìíîæåíèå \n";
-		std::cout << "2 - ýòî Äåëåíèå \n";
-		std::cout << "3 - ýòî Ñëîæåíèå \n";
-		std::cout << "4 - ýòî Âû÷èòàíèå \n";
-		std::cout << "n - ÂÛÕÎÄ ÈÇ ÏÐÎÃÐÀÌÌÛ!! \n";
+		std::cout << "1 - ÑÑ‚Ð¾ Ð£Ð¼Ð½Ð¾Ð¶ÐµÐ½Ð¸Ðµ \n";
+		std::cout << "2 - ÑÑ‚Ð¾ Ð”ÐµÐ»ÐµÐ½Ð¸Ðµ \n";
+		std::cout << "3 - ÑÑ‚Ð¾ Ð¡Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ \n";
+		std::cout << "4 - ÑÑ‚Ð¾ Ð’Ñ‹Ñ‡Ð¸Ñ‚Ð°Ð½Ð¸Ðµ \n";
+		std::cout << "n - Ð’Ð«Ð¥ÐžÐ” Ð˜Ð— ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐ«!! \n";
 		num->Print();
-		std::cout << "Âûáåðèòå àðèôìåòè÷åñêîå äåéñòâèå: \n";		
+		std::cout << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ðµ: \n";		
 		std::cin >> numOper;
 		if (numOper >= 1 && numOper <= 4)
 		{
 			if (n1 == 'n')
 			{
-				std::cout << "Âûõîä èç ïðîãðàììû!!! \n";
+				std::cout << "Ð’Ñ‹Ñ…Ð¾Ð´ Ð¸Ð· Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñ‹!!! \n";
 				break;
 			}
 			else
@@ -99,14 +99,14 @@ int main()
 						num->PrintSubtr();
 						break;
 					default:
-						std::cout << "Ââåëè íåïðàâèëüíûé ñèìâîë!!!\n";
+						std::cout << "Ð’Ð²ÐµÐ»Ð¸ Ð½ÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ñ‹Ð¹ ÑÐ¸Ð¼Ð²Ð¾Ð»!!!\n";
 						break;
 					}							
 			}
 		}
 		else
 		{
-			std::cout << "Íåïðàâèëüíûé ñèìâîë!\n";
+			std::cout << "ÐÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ñ‹Ð¹ ÑÐ¸Ð¼Ð²Ð¾Ð»!\n";
 			if (numOper == n1)				
 				break;					
 		}
